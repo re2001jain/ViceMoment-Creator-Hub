@@ -58,7 +58,7 @@ def write_srt(text, audio_seconds, path):
 
 
 def escape_filter_path(path):
-    return str(path.resolve()).replace("\\", "/").replace(":", r"\\:").replace("'", r"\\'")
+    return str(path.resolve()).replace("\\", "/").replace(":", r"\:").replace("'", r"\'")
 
 
 def main():
